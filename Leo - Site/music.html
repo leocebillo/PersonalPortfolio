@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music — Leo</title>
+<meta name="description" content="Original music and recordings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="index.html" class="brand">Leo<span class="brand-dot">.</span></a>
+  <nav class="nav" aria-label="Primary">
+    <a href="photography.html"><span class="nav-idx">01</span>Photography</a>
+    <a href="music.html" class="active"><span class="nav-idx">02</span>Music</a>
+    <a href="coding.html"><span class="nav-idx">03</span>Code</a>
+    <a href="calendar.html"><span class="nav-idx">04</span>Calendar</a>
+    <a href="about.html"><span class="nav-idx">05</span>About</a>
+    <a href="index.html#contact"><span class="nav-idx">06</span>Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <section class="section">
+    <div class="section-head">
+      <p class="eyebrow mono">02 / music</p>
+      <h2>Things I've recorded.</h2>
+      <p class="section-sub">Some of my popular tracks!</p>
+    </div>
+
+    <div class="tracklist" id="tracklist">
+      <div class="track" data-src="assets/audio/revealing-blossoms_final.mp3">
+        <button class="play-btn" aria-label="Play Revealing Blossoms">
+          <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+        </button>
+        <div class="track-info">
+          <span class="track-title">Revealing Blossoms</span>
+          <span class="track-meta mono">single · 3:08</span>
+        </div>
+        <div class="vu" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="track" data-src="assets/audio/After_the_Bloom.mp3">
+        <button class="play-btn" aria-label="Play After The Bloom">
+          <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+        </button>
+        <div class="track-info">
+          <span class="track-title">After the Bloom</span>
+          <span class="track-meta mono">single · 1:57</span>
+        </div>
+        <div class="vu" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+
+      <div class="track" data-src="assets/audio/GardenDefense.mp4">
+        <button class="play-btn" aria-label="Play Garden Defense">
+          <svg class="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <svg class="icon-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+        </button>
+        <div class="track-info">
+          <span class="track-title">Garden Defense</span>
+          <span class="track-meta mono">single · 2:13</span>
+        </div>
+        <div class="vu" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </div>
+    <audio id="audioPlayer"></audio>
+  </section>
+
+</main>
+
+<footer class="footer mono">
+  <span>© <span id="year"></span> Leo</span>
+  <span>Built on a Raspberry Pi 4.</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
